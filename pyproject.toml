@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi_auth"
+version = "1.0.0"
+description = "Middleware for using MSAL for authentication"
+authors = ["mstaal"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+fastapi = "0.104.1"
+pydantic = "^1.10.0"
+msal = "1.18.0"
+a2wsgi = "1.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.2.0" #upgraded due to security issue
+flake8 = "3.7.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
