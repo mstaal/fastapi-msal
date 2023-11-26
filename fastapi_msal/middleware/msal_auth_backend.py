@@ -6,8 +6,6 @@ from msal import ConfidentialClientApplication
 from starlette.authentication import AuthCredentials, AuthenticationBackend, AuthenticationError, BaseUser
 from starlette.authentication import UnauthenticatedUser as StarletteUnauthenticatedUser
 
-OPENID_CONFIG_URL = "https://login.microsoftonline.com/maersk.onmicrosoft.com/.well-known/openid-configuration"
-
 
 class UnauthenticatedUser(StarletteUnauthenticatedUser):
     @property
